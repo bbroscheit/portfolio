@@ -1,0 +1,8 @@
+.mainContainer{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("https://res.cloudinary.com/de2od3piw/image/upload/v1669144052/pics/background_yloyzt.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
