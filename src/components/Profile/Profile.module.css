@@ -1,0 +1,32 @@
+.mainContainer{
+    display: flex;
+    align-items: space-evenly;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: rgb(17, 16, 16);
+    color: antiquewhite;
+}
+
+.profileContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+   
+}
+
+.profileContainer img{
+   height: 500px;
+   border-radius: 5%;
+   border: 3px solid rgb(243, 193, 54)
+}
+
+.textProfileContainer{
+    max-width: 40%;
+}
+
+.textProfileContainer{
+    text-align: justify;
+
+}
