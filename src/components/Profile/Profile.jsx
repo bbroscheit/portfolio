@@ -1,6 +1,51 @@
 import React from "react";
 import Style from "./Profile.module.css";
-import ProgressBar from 'react-bootstrap/ProgressBar';
+import Skills from "./Skills";
+import { SiRedux } from "react-icons/si";
+import { SiReact } from "react-icons/si";
+import { TbBrandJavascript } from "react-icons/tb";
+import { SiMaterialui } from "react-icons/si";
+import { SiPostgresql } from "react-icons/si";
+import { SiNodedotjs } from "react-icons/si";
+import { SiExpress } from "react-icons/si";
+
+const HardSkills = [
+  {
+    name: "React",
+    skill: 90,
+    icon: <SiReact />,
+  },
+  {
+    name: "Redux",
+    skill: 85,
+    icon: <SiRedux />,
+  },
+  {
+    name: "javascript",
+    skill: 90,
+    icon: <TbBrandJavascript />,
+  },
+  {
+    name: "Material UI",
+    skill: 75,
+    icon: <SiMaterialui />,
+  },
+  {
+    name: "postgress",
+    skill: 70,
+    icon: <SiPostgresql />,
+  },
+  {
+    name: "Node.js",
+    skill: 85,
+    icon: <SiNodedotjs />,
+  },
+  {
+    name: "Express",
+    skill: 70,
+    icon: <SiExpress />,
+  },
+];
 
 function Profile() {
   return (
@@ -16,28 +61,42 @@ function Profile() {
         <div className={Style.textProfileContainer}>
           <p className={Style.textProfile}>
             Soy un Desarrollador Web Full Stack con perfil PERN (PostgreSQL,
-            Express, ReactJS, NodeJS). Poseo 600hs de Desarrollo Web en Henry
-            donde se simuló un ambiente de trabajo real durante aproximadamente
-            9 meses, utilizando metodologías ágiles.<br/> 
-            Disfruto participar en proyectos, donde
-            se construya en equipo, intercambiando ideas y maneras de lograr el
-            objetivo. Me siento cómodo en lugares de liderazgo, guiando a los
-            equipos de trabajo y resolviendo problemas. <br/>
-            Siempre estoy buscando
-            desafíos que demanden nuevos conocimientos, experiencias y que me
-            lleven a superarme constantemente. Si coincido con el perfil que
-            estas buscando o te gustaria consultarme algo, no dudes en ponerte
-            en contacto! 💪
+            Express, ReactJS, NodeJS). <br />
+            Disfruto participar en proyectos, donde se construya en equipo,
+            intercambiando ideas y maneras de lograr el objetivo. Me siento
+            cómodo en lugares de liderazgo, guiando a los equipos de trabajo y
+            resolviendo problemas. <br />
+            Siempre estoy buscando desafíos que demanden nuevos conocimientos,
+            experiencias y que me lleven a superarme constantemente. Si coincido
+            con el perfil que estas buscando o te gustaria consultarme algo, no
+            dudes en ponerte en contacto! 💪
           </p>
-          <div>
-          
-            <ul>
-              <li><ProgressBar animated variant="warning" now={45} /></li>
-              <li>skill1</li>
-              <li>skill1</li>
-              <li>skill1</li>
-            </ul>
-          </div>
+        </div>
+      </div>
+      <div>
+        <div>
+          <h4>Skills</h4>
+          {HardSkills &&
+            HardSkills.map((e) => (
+              <Skills
+                name={e.name}
+                skill={e.skill}
+                icon={e.icon}
+                key={e.name}
+              />
+            ))}
+        </div>
+        <div>
+          <h4>Skills</h4>
+          {HardSkills &&
+            HardSkills.map((e) => (
+              <Skills
+                name={e.name}
+                skill={e.skill}
+                icon={e.icon}
+                key={e.name}
+              />
+            ))}
         </div>
       </div>
     </div>

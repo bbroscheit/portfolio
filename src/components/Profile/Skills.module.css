@@ -1,0 +1,18 @@
+.mainContainer{
+    border: 1px solid antiquewhite;
+    border-radius: 9999px;
+    padding: 10px 20px;
+    margin-bottom: 5px;
+}
+
+.containerNames{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.containerBars{
+    position: relative;
+    float: right;
+}

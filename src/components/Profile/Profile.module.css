@@ -1,9 +1,9 @@
 .mainContainer{
+    padding-top: 50px;
     display: flex;
     align-items: space-evenly;
     justify-content: center;
     flex-direction: column;
-    height: 100vh;
     background-color: rgb(17, 16, 16);
     color: antiquewhite;
 }
@@ -17,9 +17,9 @@
 }
 
 .profileContainer img{
-   height: 500px;
+   height: 400px;
    border-radius: 5%;
-   border: 3px solid rgb(243, 193, 54)
+   border: 3px solid var(--main-color);
 }
 
 .textProfileContainer{
