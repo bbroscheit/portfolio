@@ -13,7 +13,7 @@ function Skills(props) {
         <Progress 
             hasStripe 
             colorScheme="yellow"
-            width="90%"
+            width="100%"
             size="sm"
             backgroundColor="gray.900"
             borderRadius="full" 

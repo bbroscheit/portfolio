@@ -1,0 +1,30 @@
+.mainContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    padding-bottom: 20px;
+}
+
+.verticalLine{
+    position: absolute;
+    z-index: 1;
+    height: 48%;
+    width: 8px;
+    border-radius: 10px;
+    background-color: white;
+    left: 50%;
+   }
+
+.cardPosition:nth-child(odd){
+    position: relative;
+    right: 18%;
+    z-index: 10;
+}
+
+.cardPosition:nth-child(even){
+    position: relative;
+    left: 18%;
+    z-index: 10;
+}

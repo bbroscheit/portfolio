@@ -1,6 +1,7 @@
 import React from "react";
 import Style from "./Profile.module.css";
 import Skills from "./Skills";
+import Timeline from '../Timeline/Timeline.jsx';
 import { SiRedux } from "react-icons/si";
 import { SiReact } from "react-icons/si";
 import { TbBrandJavascript } from "react-icons/tb";
@@ -9,7 +10,45 @@ import { SiPostgresql } from "react-icons/si";
 import { SiNodedotjs } from "react-icons/si";
 import { SiExpress } from "react-icons/si";
 
-const HardSkills = [
+const hardSkills = [
+  {
+    name: "React",
+    skill: 90,
+    icon: <SiReact />,
+  },
+  {
+    name: "Redux",
+    skill: 85,
+    icon: <SiRedux />,
+  },
+  {
+    name: "javascript",
+    skill: 90,
+    icon: <TbBrandJavascript />,
+  },
+  {
+    name: "Material UI",
+    skill: 75,
+    icon: <SiMaterialui />,
+  },
+  {
+    name: "postgress",
+    skill: 70,
+    icon: <SiPostgresql />,
+  },
+  {
+    name: "Node.js",
+    skill: 85,
+    icon: <SiNodedotjs />,
+  },
+  {
+    name: "Express",
+    skill: 70,
+    icon: <SiExpress />,
+  },
+];
+
+const softSkills = [
   {
     name: "React",
     skill: 90,
@@ -73,11 +112,13 @@ function Profile() {
           </p>
         </div>
       </div>
-      <div>
-        <div>
-          <h4>Skills</h4>
-          {HardSkills &&
-            HardSkills.map((e) => (
+      <h1>My Skills</h1>
+      <div className={Style.skillsContainer}>
+        
+        <div className={Style.skills}>
+          
+          {hardSkills &&
+            hardSkills.map((e) => (
               <Skills
                 name={e.name}
                 skill={e.skill}
@@ -86,10 +127,10 @@ function Profile() {
               />
             ))}
         </div>
-        <div>
-          <h4>Skills</h4>
-          {HardSkills &&
-            HardSkills.map((e) => (
+        <div className={Style.skills}>
+          
+          {softSkills &&
+            softSkills.map((e) => (
               <Skills
                 name={e.name}
                 skill={e.skill}
@@ -99,6 +140,7 @@ function Profile() {
             ))}
         </div>
       </div>
+      <Timeline />
     </div>
   );
 }
