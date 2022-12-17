@@ -4,8 +4,8 @@
     align-items: space-evenly;
     justify-content: center;
     flex-direction: column;
-    background-color: rgb(17, 16, 16);
-    color: antiquewhite;
+    background-color: var(--bgColor);
+    color: var(--textColor);
 }
 
 .profileContainer{
