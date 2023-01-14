@@ -1,0 +1,12 @@
+.mainContainer{
+    padding-top: 50px;
+    display: flex;
+    align-items: space-evenly;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url("https://res.cloudinary.com/de2od3piw/image/upload/v1670456611/pics/kenzie_blog_desenvolvedor-de-software_cv6evn.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color:var(--textColor);
+}
