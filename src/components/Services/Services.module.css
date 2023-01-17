@@ -1,4 +1,9 @@
 .mainContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 100vh;
     padding: 50px 90px;
     background-image: url("https://res.cloudinary.com/de2od3piw/image/upload/v1670456611/pics/kenzie_blog_desenvolvedor-de-software_cv6evn.webp");
     background-position: center;

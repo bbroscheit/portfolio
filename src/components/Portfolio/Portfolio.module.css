@@ -21,3 +21,19 @@
     ". . ."
     ". . .";
 }
+
+.filterContainer{
+    width: 100%;
+    background-color: var(--bgColor);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 20px 0px;
+}
+
+.filter{
+    width: 20%;
+    background-color: var(--textColor);
+    color: var(--bgColor);
+    margin-right: 20px;
+}

@@ -1,12 +1,29 @@
 .mainContainer{
     padding-top: 50px;
+    min-height: 100vh;
     display: flex;
     align-items: space-evenly;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-direction: column;
     background-image: url("https://res.cloudinary.com/de2od3piw/image/upload/v1670456611/pics/kenzie_blog_desenvolvedor-de-software_cv6evn.webp");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     color:var(--textColor);
+}
+
+.formContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 50%;
+}
+
+.buttonContainer{
+    width: 40%;
+    margin: 15px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }

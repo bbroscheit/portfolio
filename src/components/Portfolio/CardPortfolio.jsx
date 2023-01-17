@@ -1,47 +1,36 @@
 import React from "react";
 import Style from "./CardPortfolio.module.css";
-import { Card, CardHeader, CardBody } from '@chakra-ui/react';
+import { Card, CardBody } from '@chakra-ui/react';
 import { Image, Stack, Heading, Text} from '@chakra-ui/react';
 
 function CardPortfolio({ key, title, tech, image, date }) {
+  console.log(tech)
   return (
-    // <div key={key}>
-
-    //   <h1>{title}</h1>
-    //   <h3>{tech}</h3>
-    //   <img src={image} alt="portada" />
-    //   <h3>{date}</h3>
-    // </div>
-    <Card maxW="sm" key={key} minHeight="350px">
+   
+    <div className={Style.card}>
+    <Card maxW="sm" key={key} minHeight="350px" color="white">
       <CardBody>
         <Image
           src={image}
           alt="Portada"
           borderRadius="lg"
+          maxHeight="220px"
+          
         />
         <Stack mt="6" spacing="3">
-          <Heading size="md">{title}</Heading>
+          <Heading size="md" margin="10px">{title}</Heading>
           <Text>
-            {tech}
+            {tech.map( e => <div className={Style.containerTech}>{e}</div>)}
           </Text>
-          {/* <Text color="blue.600" fontSize="2xl"> */}
-          <Text>
+          
+          <Text margin="10px">
             Release on : {date}
           </Text>
         </Stack>
       </CardBody>
-      {/* <Divider />
-      <CardFooter>
-        <ButtonGroup spacing="2">
-          <Button variant="solid" colorScheme="blue">
-            Buy now
-          </Button>
-          <Button variant="ghost" colorScheme="blue">
-            Add to cart
-          </Button>
-        </ButtonGroup>
-      </CardFooter> */}
+      
     </Card>
+    </div>
   );
 }
 

@@ -69,6 +69,7 @@ function Form() {
     <div className={Style.mainContainer}>
       <h1> soy el form</h1>
       <h2>subtitulo copado</h2>
+      <div className={Style.formContainer}>
       <FormControl isInvalid={error}>
         <FormLabel>Nombre</FormLabel>
         <Input
@@ -110,15 +111,16 @@ function Form() {
           onChange={handleInputChange}
         />
         {error.comment && <FormErrorMessage>{error.comment}</FormErrorMessage>}
-        <div>
-          <Button mt={4} colorScheme="teal" type="Clear">
-            Submit
+        <div className={Style.buttonContainer}>
+          <Button mt={4} colorScheme="teal" type="Clear" width="110px">
+            Clear
           </Button>
-          <Button mt={4} colorScheme="teal" type="Send">
-            Submit
+          <Button mt={4} colorScheme="teal" type="Send" width="110px">
+            Send
           </Button>
         </div>
       </FormControl>
+      </div>
     </div>
   );
 }
