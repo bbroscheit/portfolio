@@ -1,7 +1,7 @@
 import React from "react";
 import Style from "./Profile.module.css";
 import Skills from "./Skills";
-import Timeline from '../Timeline/Timeline.jsx';
+// import Timeline from '../Timeline/Timeline.jsx';
 import { SiRedux } from "react-icons/si";
 import { SiReact } from "react-icons/si";
 import { TbBrandJavascript } from "react-icons/tb";
@@ -140,7 +140,7 @@ function Profile() {
             ))}
         </div>
       </div>
-      <Timeline />
+      
     </div>
   );
 }
