@@ -1,8 +1,20 @@
-.cardArchivementContainer{
-    min-height:100vh;
-    display:flex;
-    justify-content:space-evenly;
-    align-items:center;
-    flex-wrap:nowrap;
+.mainContainer{
+    min-height: 100vh;
+    padding: 20px 50px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bgColor);
+    background-image: url("https://res.cloudinary.com/de2od3piw/image/upload/v1680105645/pics/iStock-1163542789_u3n4k0.jpg");
+    background-position: center;
+    background-size: cover;
+    color: var(--textColor);
+}
 
+.cardArchivementContainer{
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
 }

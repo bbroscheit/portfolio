@@ -60,10 +60,6 @@ function Portfolio() {
 
   const [portfolioFilter, setPortfolioFilter] = useState(portfolio);
   let portfolioBackup = portfolio;
-    
-  console.log(portfolioFilter,"antes del filter")
-  
-  //let portfolioBackup = portfolio;
 
   let technologies = [];
   for (let i = 0; i < portfolio.length; i++) {
@@ -78,13 +74,8 @@ function Portfolio() {
     
     
     portfolioBackup = portfolio.filter( f => f.tech.includes(e.target.value))
-    // const finalPortfolio= portfolioFilter.map(e=>e)
-    // console.log(portfolioBackup, " soy el portfolio filtrado")
-    
-    setPortfolioFilter(portfolioBackup)
-    
-    // console.log(portfolioFilter, "soy el estado portfolioFilter")
-    
+        setPortfolioFilter(portfolioBackup)
+  
   }
 
   return (

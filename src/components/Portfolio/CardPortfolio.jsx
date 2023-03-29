@@ -4,7 +4,7 @@ import { Card, CardBody } from '@chakra-ui/react';
 import { Image, Stack, Heading, Text} from '@chakra-ui/react';
 
 function CardPortfolio({ key, title, tech, image, date }) {
-  console.log(tech)
+  
   return (
    
     <div className={Style.card}>
