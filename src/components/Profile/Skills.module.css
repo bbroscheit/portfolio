@@ -21,6 +21,12 @@
 }
 
 .containerBars{
-display: flex;
-align-items: center;
+    align-items: center;
+    padding-top: 12%;
+}
+
+.skillsIcons{
+    font-size: 20px;
+    padding: 5px 0px 0px 0px;
+
 }

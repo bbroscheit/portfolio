@@ -2,14 +2,14 @@ import React from "react";
 import { useState } from "react";
 import CardPortfolio from "./CardPortfolio";
 import Style from "./Portfolio.module.css";
-import { Select } from "@chakra-ui/react";
-// import { TbChevronsDownLeft } from "react-icons/tb";
+import Title from '../StylishComponents/Title/Title.jsx';
+
 
 const portfolio = [
   {
     id: 1,
     title: "HenryMarket App",
-    tech: ["javascript", "react", "redux", "node.js", "postgres", "express","MaterialUI"],
+    tech: ["Javascript", "React", "Redux", "Node.js", "Postgres", "Express","MaterialUI"],
     image:
     "https://res.cloudinary.com/de2od3piw/image/upload/v1673913518/pics/henryMarket1_fn1bo7_63f684modify.png",
     date: "1-12-2022",
@@ -17,7 +17,7 @@ const portfolio = [
   {
     id: 2,
     title: "VideoGames App",
-    tech: ["javascript", "react", "redux"],
+    tech: ["Javascript", "React", "Redux"],
     image:
       "https://res.cloudinary.com/de2od3piw/image/upload/v1668989651/pics/videogames1_qhqtbm.png",
     date: "1-11-2020",
@@ -59,36 +59,28 @@ const portfolio = [
 function Portfolio() {
 
   const [portfolioFilter, setPortfolioFilter] = useState(portfolio);
-  let portfolioBackup = portfolio;
+  // let portfolioBackup = portfolio;
 
-  let technologies = [];
-  for (let i = 0; i < portfolio.length; i++) {
-    for (let j = 0; j < portfolio[i].tech.length; j++) {
-      if (!technologies.includes(portfolio[i].tech[j])) {
-        technologies.push(portfolio[i].tech[j]);
-      }
-    }
-  }
+  // let technologies = [];
+  // for (let i = 0; i < portfolio.length; i++) {
+  //   for (let j = 0; j < portfolio[i].tech.length; j++) {
+  //     if (!technologies.includes(portfolio[i].tech[j])) {
+  //       technologies.push(portfolio[i].tech[j]);
+  //     }
+  //   }
+  // }
 
-  function handleSelect(e){
+  // function handleSelect(e){
     
     
-    portfolioBackup = portfolio.filter( f => f.tech.includes(e.target.value))
-        setPortfolioFilter(portfolioBackup)
+  //   portfolioBackup = portfolio.filter( f => f.tech.includes(e.target.value))
+  //       setPortfolioFilter(portfolioBackup)
   
-  }
+  // }
 
   return (
     <div className={Style.mainContainer}>
-      <h1>PORTFOLIO</h1>
-      <h3>algun subtitulo</h3>
-      <div className={Style.filterContainer}>
-      <div className={Style.filter}>
-      <Select placeholder='Select option' onChange={handleSelect} >
-          {technologies && technologies.map( e => <option value={e}>{e}</option>)}
-      </Select>
-      </div>
-      </div>
+      <Title title={"Portfolio"}/>
       <div className={Style.cardContainer}>
         {portfolioFilter &&
           portfolioFilter.map((e) => (

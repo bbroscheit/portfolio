@@ -1,14 +1,21 @@
 import React from "react";
 import Style from "./Profile.module.css";
 import Skills from "./Skills";
-// import Timeline from '../Timeline/Timeline.jsx';
+import Title from '../StylishComponents/Title/Title.jsx'
 import { SiRedux } from "react-icons/si";
 import { SiReact } from "react-icons/si";
 import { TbBrandJavascript } from "react-icons/tb";
-import { SiMaterialui } from "react-icons/si";
+import { SiMongodb} from "react-icons/si";
 import { SiPostgresql } from "react-icons/si";
 import { SiNodedotjs } from "react-icons/si";
 import { SiExpress } from "react-icons/si";
+import { FaUserFriends } from "react-icons/fa";
+import { GiMovementSensor } from "react-icons/gi";
+import { ImBook } from "react-icons/im";
+import { MdOutlineAddReaction } from "react-icons/md";
+import { ImFire } from "react-icons/im";
+import { AiOutlineThunderbolt } from "react-icons/ai";
+import { FaUserNinja } from "react-icons/fa";
 
 const hardSkills = [
   {
@@ -22,17 +29,17 @@ const hardSkills = [
     icon: <SiRedux />,
   },
   {
-    name: "javascript",
+    name: "Javascript",
     skill: 90,
     icon: <TbBrandJavascript />,
   },
   {
-    name: "Material UI",
+    name: "MongoDB",
     skill: 75,
-    icon: <SiMaterialui />,
+    icon: <SiMongodb />,
   },
   {
-    name: "postgress",
+    name: "Postgress",
     skill: 70,
     icon: <SiPostgresql />,
   },
@@ -50,46 +57,46 @@ const hardSkills = [
 
 const softSkills = [
   {
-    name: "React",
+    name: "Fellowship",
     skill: 90,
-    icon: <SiReact />,
+    icon: <FaUserFriends />,
   },
   {
-    name: "Redux",
+    name: "Resilience",
     skill: 85,
-    icon: <SiRedux />,
+    icon: <GiMovementSensor />,
   },
   {
-    name: "javascript",
+    name: "Learning",
     skill: 90,
-    icon: <TbBrandJavascript />,
+    icon: <ImBook />,
   },
   {
-    name: "Material UI",
+    name: "Attitude",
+    skill: 85,
+    icon: <MdOutlineAddReaction />,
+  },
+  {
+    name: "Willigness",
+    skill: 80,
+    icon: <ImFire />,
+  },
+  {
+    name: "Leadership",
+    skill: 85,
+    icon: <AiOutlineThunderbolt />,
+  },
+  {
+    name: "Self Taught",
     skill: 75,
-    icon: <SiMaterialui />,
-  },
-  {
-    name: "postgress",
-    skill: 70,
-    icon: <SiPostgresql />,
-  },
-  {
-    name: "Node.js",
-    skill: 85,
-    icon: <SiNodedotjs />,
-  },
-  {
-    name: "Express",
-    skill: 70,
-    icon: <SiExpress />,
+    icon: <FaUserNinja />,
   },
 ];
 
 function Profile() {
   return (
     <div className={Style.mainContainer}>
-      <h1>About Me</h1>
+      <Title title={"About Me"}/>
       <div className={Style.profileContainer}>
         <div className={Style.imageContainer}>
           <img
@@ -112,7 +119,7 @@ function Profile() {
           </p>
         </div>
       </div>
-      <h1>My Skills</h1>
+      <Title title={"My Skills"}/>
       <div className={Style.skillsContainer}>
         
         <div className={Style.skills}>

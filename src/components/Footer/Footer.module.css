@@ -1,0 +1,27 @@
+.footerContainer{
+    padding-top: 50px;    
+    display: flex;
+    align-items: space-evenly;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--bgColor);
+    color:var(--textColor);
+}
+
+.socialContainer{
+    margin: 20px auto 50px;
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 35px;
+    
+}
+
+.icons , .iconsInstagram{
+    color: antiquewhite;
+}
+
+.iconsInstagram{
+    font-size: 45px;
+}

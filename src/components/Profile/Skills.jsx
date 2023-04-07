@@ -1,24 +1,17 @@
 import React from "react";
 import Style from "./Skills.module.css";
-import { Progress } from '@chakra-ui/react';
+import LinearProgress from '@mui/material/LinearProgress';
+
 
 function Skills(props) {
   return (
     <div className={Style.mainContainer}>
       <div className={Style.containerNames}>
-        <span>{props.icon}</span>
-        <h5>{props.name}</h5>
+        <span className={Style.skillsIcons}>{props.icon}</span>
+        <h4>{props.name}</h4>
       </div>
       <div className={Style.containerBars}>
-        <Progress 
-            hasStripe 
-            colorScheme="yellow"
-            width="100%"
-            size="sm"
-            backgroundColor="gray.900"
-            borderRadius="full" 
-            value={props.skill} 
-        />
+        <LinearProgress variant="determinate" value={props.skill} />
       </div>
     </div>
   );

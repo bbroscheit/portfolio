@@ -13,8 +13,8 @@
 .cardArchivementContainer{
     padding-top: 50px;
     display: flex;
-    align-items: center;
+    align-items: space-evenly;
     justify-content: space-evenly;
-    flex-direction: row-reverse;
-    flex-wrap: nowrap;
+    flex-direction: row;
+    flex-wrap: wrap;
 }

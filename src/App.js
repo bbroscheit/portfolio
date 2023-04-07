@@ -4,7 +4,7 @@ import Profile from './components/Profile/Profile.jsx';
 import Archivement from './components/Archivement/Archivement.jsx';
 import Portfolio from './components/Portfolio/Portfolio';
 import Testimonials from './components/Testimonials/Testimonials'
-
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -14,6 +14,7 @@ function App() {
       <Archivement />
       <Portfolio />
       <Testimonials />
+      <Footer />
     </div>
   );
 }

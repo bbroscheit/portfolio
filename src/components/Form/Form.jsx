@@ -40,9 +40,7 @@ function Form() {
     if (!input.phone) {
       errors.phone = "El campo no puede quedar vacio";
     }
-    // if(!input.brand){
-    //         errors.brand = "El campo no puede quedar vacio"
-    //     }
+   
     if (
       errors.name ||
       errors.price ||

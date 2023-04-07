@@ -7,9 +7,13 @@
     color: var(--textColor);
 }
 
-.mainContainer img{
-   width: 300px;
-   border: 5px solid var(--main-color);
-   border-radius: 9999px;
+.mainContainer h1, .mainContainer h2, .mainContainer h3{
+   margin:0px 0px 10px 0px;
     
 }
+
+.mainContainer h2{
+    margin-top: 10px;
+     
+ }
+ 

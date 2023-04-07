@@ -1,0 +1,15 @@
+.mainContainer{
+    padding-top: 50px;
+    background-image: url("https://res.cloudinary.com/de2od3piw/image/upload/v1680908560/9-1024x677_k47gzv.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.testimonialsContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    min-height: 100vh;
+}

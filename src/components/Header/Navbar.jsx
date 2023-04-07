@@ -1,31 +1,18 @@
 import React from 'react';
 import Style from './Navbar.module.css';
-// import { Link } from 'react-router-dom';
-import { useState } from 'react';
-import { FaRegUserCircle } from 'react-icons/fa';
+import { NavLink } from 'react-router-dom';
+
 
 function Navbar() {
 
-  const [state, setstate] = useState(true);
-
   return (
-    state === false ?
     <div className={Style.mainContainer}>
-        <ul> 
-            <a href="#"><span><FaRegUserCircle /></span><li>About Me</li></a>
-            <a href="#"><span><FaRegUserCircle /></span><li>Services</li></a>
-            <a href="#"><span><FaRegUserCircle /></span><li>Portfolio</li></a>
-            <a href="#"><span><FaRegUserCircle /></span><li>Contact Me</li></a>
-        </ul>
-    </div>
-    :
-    <div className={Style.mainContainerMinor}>
-        <ul>
-          <li><a href="#">About Me</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Contact Me</a></li>
-        </ul>
+      <div className={Style.containerNav}>
+        <NavLink to="#about" className={Style.unselected} >About Me</NavLink>
+        <NavLink to="/" className={Style.unselected}>Archivements</NavLink>
+        <NavLink to="/" className={Style.unselected}>Portfolio</NavLink>
+        <NavLink to="/" className={Style.unselected}>Testimonials</NavLink>
+        </div>
     </div>
   )
 }
