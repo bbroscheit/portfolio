@@ -95,7 +95,7 @@ const softSkills = [
 
 function Profile() {
   return (
-    <div className={Style.mainContainer}>
+    <div className={Style.mainContainer} id="about">
       <Title title={"About Me"}/>
       <div className={Style.profileContainer}>
         <div className={Style.imageContainer}>
