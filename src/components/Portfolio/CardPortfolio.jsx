@@ -46,7 +46,11 @@ function CardPortfolio({ key, title, tech, image, date }) {
         alt="imagen del proyecto"
       />
       <CardContent>
-        <Typography variant="h5" sx={{ marginTop:2 , marginBottom:2
+        <Typography variant="h5" 
+                    sx={{ marginTop:2 , 
+                          marginBottom:2, 
+                          color: "#f3c035", 
+                          fontWeight:"bold"
         }}>
           {title}
         </Typography>

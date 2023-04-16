@@ -7,12 +7,15 @@ function Navbar() {
 
   return (
     <div className={Style.mainContainer}>
+      <div className={Style.containerGeneral}> 
+        <p className={Style.avatarName}>BBroscheit</p>
       <div className={Style.containerNav}>
         <NavLink to="#about" className={Style.unselected} >About Me</NavLink>
         <NavLink to="/" className={Style.unselected}>Archivements</NavLink>
         <NavLink to="/" className={Style.unselected}>Portfolio</NavLink>
         <NavLink to="/" className={Style.unselected}>Testimonials</NavLink>
         </div>
+      </div> 
     </div>
   )
 }
