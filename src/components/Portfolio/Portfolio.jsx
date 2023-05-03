@@ -13,6 +13,7 @@ const portfolio = [
     image:
     "https://res.cloudinary.com/de2od3piw/image/upload/v1673913518/pics/henryMarket1_fn1bo7_63f684modify.png",
     date: "1-12-2022",
+    page:"https://pg-henrymarket.vercel.app/"
   },
   {
     id: 2,
@@ -21,6 +22,7 @@ const portfolio = [
     image:
       "https://res.cloudinary.com/de2od3piw/image/upload/v1668989651/pics/videogames1_qhqtbm.png",
     date: "1-11-2020",
+    page:"https://pi-videogames-orcin.vercel.app/"
   },
   // {
   //   id: 3,
@@ -90,6 +92,7 @@ function Portfolio() {
               tech={e.tech}
               image={e.image}
               date={e.date}
+              page={e.page}
             />
           ))}
       </div>

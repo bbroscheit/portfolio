@@ -23,7 +23,7 @@ import Typography from '@mui/material/Typography';
 // }));
 
 
-function CardPortfolio({ key, title, tech, image, date }) {
+function CardPortfolio({ key, title, tech, image, date, page }) {
   // const [expanded, setExpanded] = React.useState(false);
 
   // const handleExpandClick = () => {
@@ -52,7 +52,7 @@ function CardPortfolio({ key, title, tech, image, date }) {
                           color: "#f3c035", 
                           fontWeight:"bold"
         }}>
-          {title}
+          <a href={page}>{title}</a>
         </Typography>
       <div className={Style.techContainer}>
         {tech.map( e => <div className={Style.containerTech}>{e}</div>)}
