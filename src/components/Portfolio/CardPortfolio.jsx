@@ -52,7 +52,7 @@ function CardPortfolio({ key, title, tech, image, date, page }) {
                           color: "#f3c035", 
                           fontWeight:"bold"
         }}>
-          <a href={page}>{title}</a>
+          <a href={page} target="_blank" rel="noreferrer" className={Style.linkportfolio}>{title}</a>
         </Typography>
       <div className={Style.techContainer}>
         {tech.map( e => <div className={Style.containerTech}>{e}</div>)}

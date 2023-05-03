@@ -26,3 +26,8 @@
     min-height: 120px;
     margin-bottom: 14px;
 }
+
+.linkportfolio{
+    color: var(--textColor);
+    text-decoration: none;
+}
