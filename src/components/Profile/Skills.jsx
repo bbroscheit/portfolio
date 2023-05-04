@@ -8,7 +8,7 @@ function Skills(props) {
     <div className={Style.mainContainer}>
       <div className={Style.containerNames}>
         <span className={Style.skillsIcons}>{props.icon}</span>
-        <h4>{props.name}</h4>
+        <h4 className={Style.skillName}>{props.name}</h4>
       </div>
       <div className={Style.containerBars}>
         <LinearProgress variant="determinate" value={props.skill} />

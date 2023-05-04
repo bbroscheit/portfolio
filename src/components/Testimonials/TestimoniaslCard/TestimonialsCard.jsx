@@ -11,7 +11,7 @@ function TestimonialsCard({ id, name, avatar, quote }) {
     <Card 
       sx={{ 
           maxWidth: 345 , 
-          minHeight : 320,
+          height : 350,
           backgroundColor: "rgba(255,255,255,0.0)",
           backdropFilter: "blur(15px)",
           color:"#FFFFFF"

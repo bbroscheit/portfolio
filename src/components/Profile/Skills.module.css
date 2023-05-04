@@ -30,3 +30,7 @@
     padding: 5px 0px 0px 0px;
 
 }
+
+.skillName{
+    color: var(--main-color);
+}
