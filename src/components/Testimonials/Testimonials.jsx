@@ -23,7 +23,7 @@ const testimonios=[{
 
 function Testimonials(){
     return(
-        <div className={style.mainContainer}>
+        <div className={style.mainContainer} id="testimonials">
             <Title title={"Testimonials"}/>
             <div className={style.testimonialsContainer}> 
             {

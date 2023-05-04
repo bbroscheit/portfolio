@@ -12,7 +12,7 @@ function ImagenAndBody() {
       />
       <h2>I'm Bernardo Broscheit</h2>
       <h3>Full Stack Developer</h3>
-      <h3> Let's be a Team!</h3>
+      <h3 className={Style.subtitle}> Let's be a Team!</h3>
     </div>
   );
 }

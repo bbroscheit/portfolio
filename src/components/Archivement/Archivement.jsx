@@ -42,7 +42,7 @@ const jobArchivement = [{
 
 function Archivement(){
     return(
-        <div className={style.mainContainer}>
+        <div className={style.mainContainer} id="archivements">
             <Title title={"Jobs & Archivement"}/>
         
             <div className={style.cardArchivementContainer}>

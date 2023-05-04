@@ -11,7 +11,7 @@
     margin: 10px auto ;
     width: 30%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     font-size: 25px;
     
@@ -19,6 +19,16 @@
 
 .icons , .iconsInstagram{
     color: antiquewhite;
+    padding: 10px 14px;
+    border-radius: 100%;
+    transition: background-color 0.4s;
+}
+
+.icons:hover , .iconsInstagram:hover{
+    background-color: rgb(24, 26, 26);
+    box-shadow: -2px 6px 10px 2px rgba(0,0,0,0.49);
+    -webkit-box-shadow: -2px 6px 10px 2px rgba(0,0,0,0.49);
+    -moz-box-shadow: -2px 6px 10px 2px rgba(0,0,0,0.49);
 }
 
 .iconsInstagram{

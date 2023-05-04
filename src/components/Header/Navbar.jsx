@@ -1,6 +1,5 @@
 import React from 'react';
 import Style from './Navbar.module.css';
-import { NavLink } from 'react-router-dom';
 
 
 function Navbar() {
@@ -10,10 +9,10 @@ function Navbar() {
       <div className={Style.containerGeneral}> 
         <p className={Style.avatarName}>BBroscheit</p>
       <div className={Style.containerNav}>
-        <NavLink to="#about" className={Style.unselected} >About Me</NavLink>
-        <NavLink to="/" className={Style.unselected}>Archivements</NavLink>
-        <NavLink to="/" className={Style.unselected}>Portfolio</NavLink>
-        <NavLink to="/" className={Style.unselected}>Testimonials</NavLink>
+        <a href="#about" className={Style.unselected}>About Me</a>
+        <a href="#archivements" className={Style.unselected}>Archivements</a>
+        <a href="#portfolio" className={Style.unselected}>Portfolio</a>
+        <a href="#testimonials" className={Style.unselected}>Testimonials</a>
         </div>
       </div> 
     </div>

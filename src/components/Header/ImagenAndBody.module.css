@@ -16,4 +16,10 @@
     margin-top: 10px;
      
  }
+
+.subtitle{
+    color: var(--main-color);
+    font-size: 22px;
+    font-family: Courgette;
+}
  
