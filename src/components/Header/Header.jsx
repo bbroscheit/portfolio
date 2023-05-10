@@ -6,7 +6,7 @@ import ImagenAndBody from './ImagenAndBody.jsx';
 function Header() {
   return (
    <div className={Style.mainContainer}>
-      <div className={Style.mainContainerOpacity}>
+      <div className="mainContainerOpacity">
           <Navbar />
           <ImagenAndBody />
       </div>

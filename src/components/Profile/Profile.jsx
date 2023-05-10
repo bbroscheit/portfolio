@@ -106,8 +106,8 @@ function Profile() {
         </div>
         <div className={Style.textProfileContainer}>
           <p className={Style.textProfile}>
-            Soy un Desarrollador Web Full Stack con perfil PERN (PostgreSQL,
-            Express, ReactJS, NodeJS). <br />
+            Soy un Desarrollador Web Full Stack y Scrum Master que , a dia de hoy, cuenta con un perfil variado con tecnologias como PostgreSQL,
+            Express, ReactJS, NodeJS, Angular y MongoDB . <br />
             Disfruto participar en proyectos, donde se construya en equipo,
             intercambiando ideas y maneras de lograr el objetivo. Me siento
             cómodo en lugares de liderazgo, guiando a los equipos de trabajo y

@@ -1,12 +1,17 @@
 .mainContainer{
-    min-height: 100vh;
-    padding: 20px 50px 20px 20px;
-    display: flex;
-    flex-direction: column;
     background-color: var(--bgColor);
     background-image: url("https://res.cloudinary.com/de2od3piw/image/upload/v1680105645/pics/iStock-1163542789_u3n4k0.jpg");
     background-position: center;
     background-size: cover;
+    min-height: 100vh;
+}
+
+.secondContainer{
+    min-height: 100vh;
+    width: 100%;
+    padding: 20px 50px 20px 20px;
+    display: flex;
+    flex-direction: column;
     color: var(--textColor);
 }
 

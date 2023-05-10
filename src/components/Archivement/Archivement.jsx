@@ -43,6 +43,8 @@ const jobArchivement = [{
 function Archivement(){
     return(
         <div className={style.mainContainer} id="archivements">
+            <div className="mainContainerOpacity">
+            <div>
             <Title title={"Jobs & Archivement"}/>
         
             <div className={style.cardArchivementContainer}>
@@ -53,6 +55,8 @@ function Archivement(){
                     resumen={e.resumen}
                     cDate={e.cDate}
                     fDate={e.fDate} />)}
+            </div>
+            </div>
             </div>
         </div>
     )
