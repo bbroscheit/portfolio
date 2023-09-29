@@ -9,13 +9,17 @@ import Typography from '@mui/material/Typography';
 function CardPortfolio({ key, title, tech, image, date, page }) {
  
   return (
+    <div className={Style.flipContainer}>
+        <div className={Style.cardflip}>
     <Card 
       sx={{ 
-        maxWidth: 345,
+        height:500,
         color: "#FFFFFF",
         backgroundColor: 'rgba(20,20,20)',
         backdropFilter: 'blur(15px)'
-      }}>
+      }}
+        className={Style.front}
+      >
       
       <CardMedia
         component="img"
@@ -38,6 +42,29 @@ function CardPortfolio({ key, title, tech, image, date, page }) {
       <Typography sx={{ fontSize:14 , fontWeight:"600"}}>Release on : {date}</Typography>
       </CardContent>
     </Card>
+    <Card 
+      sx={{ 
+        height:500,
+        color: "#FFFFFF",
+        backgroundColor: 'rgba(20,20,20)',
+        backdropFilter: 'blur(15px)'
+      }}
+        className={Style.back}
+      >
+      <CardContent>
+        <Typography variant="h5" 
+                    sx={{ marginTop:2 , 
+                          marginBottom:2, 
+                          color: "#f3c035", 
+                          fontWeight:"bold"
+        }}>
+          Resumen y Caracteristicas
+        </Typography>
+      
+      </CardContent>
+    </Card>
+      </div>
+    </div>
   );
 }
 

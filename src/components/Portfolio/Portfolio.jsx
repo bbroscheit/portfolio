@@ -14,7 +14,8 @@ const portfolio = [
     image:
     "https://res.cloudinary.com/de2od3piw/image/upload/v1673913518/pics/henryMarket1_fn1bo7_63f684modify.png",
     date: "1-12-2022",
-    page:"https://pg-henrymarket.vercel.app/"
+    page:"https://pg-henrymarket.vercel.app/",
+    detail:""
   },
   {
     id: 2,
@@ -46,8 +47,9 @@ function Portfolio() {
   return (
     <div className={Style.mainContainer} id="portfolio">
       <Title title={"Porfolio y Proyectos"}/>
-      <div className={Style.cardContainer}>
-        {portfolioFilter &&
+      
+        <div className={Style.cardContainer}>
+          {portfolioFilter &&
           portfolioFilter.map((e) => (
             <CardPortfolio
               key={e.id}
@@ -59,6 +61,7 @@ function Portfolio() {
             />
           ))}
       </div>
+     
     </div>
   );
 }

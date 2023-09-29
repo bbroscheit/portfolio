@@ -1,6 +1,5 @@
 .card{
     /* border: 1px solid var(--textColor); */
-    
     border-radius: 15px;
     padding: 5px;
     box-shadow: -2px 6px 10px 2px rgba(0,0,0,0.49);
@@ -31,3 +30,32 @@
     color: var(--textColor);
     text-decoration: none;
 }
+
+.cardflip{
+    position: relative;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+ }
+
+.flipContainer{
+   background-color: transparent;
+   width: 300px;
+   min-height: 500px;
+   perspective: 1000px;
+}
+
+.flipContainer:hover .cardflip {
+    transform: rotateY(180deg);
+  }
+
+  .front{
+    position: absolute;
+    backface-visibility: hidden;
+  }
+
+ .back{
+    position: absolute;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    
+  }
