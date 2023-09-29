@@ -4,6 +4,14 @@ import Title from "../StylishComponents/Title/Title.jsx"
 import style from '../Archivement/Archivement.module.css'
 
 const jobArchivement = [{
+    id:5,
+    section: "job",
+    company : "Basani SA",
+    tarea: "FullStack Developer",
+    resumen:"Luego de un año completo de estudios se me dio la oportunidad de formar parte del sector de sistemas de Basani SA como Fullstack Developer",
+    cDate:"01-07-2023",
+    fDate:"al presente"  
+},{
     id:4,
     section: "Archivement",
     company : "Jimena Cardenas",
@@ -35,7 +43,7 @@ const jobArchivement = [{
     tarea: "Asistente de Tesoreria",
     resumen:"Hace 13 años que comencé en Basani, pasando por los sectores de Archivo, Contabilidad, Proveedores y Teosoreria. ",
     cDate:"01-09-2009",
-    fDate:"at Present"
+    fDate:"01-07-2023"
     
 }
 ]

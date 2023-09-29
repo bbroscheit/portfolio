@@ -8,6 +8,7 @@ import Title from '../StylishComponents/Title/Title.jsx';
 const portfolio = [
   {
     id: 1,
+    type:"portfolio",
     title: "HenryMarket App",
     tech: ["Javascript", "React", "Redux", "Node.js", "Postgres", "Express","MaterialUI"],
     image:
@@ -17,6 +18,7 @@ const portfolio = [
   },
   {
     id: 2,
+    type:"portfolio",
     title: "VideoGames App",
     tech: ["Javascript", "React", "Redux"],
     image:
@@ -24,6 +26,17 @@ const portfolio = [
     date: "1-11-2022",
     page:"https://pi-videogames-orcin.vercel.app/"
   },
+  {
+    id: 3,
+    type:"proyecto",
+    title: "Totem de Recepción",
+    tech: ["Javascript", "React", "Next.js"],
+    image:
+      "https://res.cloudinary.com/de2od3piw/image/upload/v1696014628/IMG_20230915_155134_i0be8b.jpg",
+    date: "27-07-2023",
+    page:""
+  },
+  
 ];
 
 function Portfolio() {
@@ -32,7 +45,7 @@ function Portfolio() {
 
   return (
     <div className={Style.mainContainer} id="portfolio">
-      <Title title={"Portfolio"}/>
+      <Title title={"Porfolio y Proyectos"}/>
       <div className={Style.cardContainer}>
         {portfolioFilter &&
           portfolioFilter.map((e) => (
