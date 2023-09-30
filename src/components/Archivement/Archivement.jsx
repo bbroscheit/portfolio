@@ -53,7 +53,7 @@ function Archivement(){
         <div className={style.mainContainer} id="archivements">
             <div className="mainContainerOpacity">
             <div>
-            <Title title={"Jobs & Archivement"}/>
+            <Title title={"Logros y Trabajos"}/>
         
             <div className={style.cardArchivementContainer}>
                 {jobArchivement && jobArchivement.map(e => <ArchivementCard 

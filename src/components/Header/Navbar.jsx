@@ -9,10 +9,10 @@ function Navbar() {
       <div className={Style.containerGeneral}> 
         <p className={Style.avatarName}>BBroscheit</p>
       <div className={Style.containerNav}>
-        <a href="#about" className={Style.unselected}>About Me</a>
-        <a href="#archivements" className={Style.unselected}>Archivements</a>
-        <a href="#portfolio" className={Style.unselected}>Portfolio</a>
-        <a href="#testimonials" className={Style.unselected}>Testimonials</a>
+        <a href="#about" className={Style.unselected}>Sobre Mí</a>
+        <a href="#archivements" className={Style.unselected}>Logros y Trabajos</a>
+        <a href="#portfolio" className={Style.unselected}>Portfolio y Proyectos</a>
+        <a href="#testimonials" className={Style.unselected}>Testimonios</a>
         </div>
       </div> 
     </div>

@@ -4,10 +4,15 @@ import Card from '@mui/material/Card';
 import CardMedia from '@mui/material/CardMedia';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
+import Markdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
 
 
-function CardPortfolio({ key, title, tech, image, date, page }) {
- 
+function CardPortfolio({ key, title, tech, image, date, page, features, detail }) {
+  const markdownDetail = detail
+  const markdownFeatures = features
+
+
   return (
     <div className={Style.flipContainer}>
         <div className={Style.cardflip}>
@@ -44,6 +49,7 @@ function CardPortfolio({ key, title, tech, image, date, page }) {
     </Card>
     <Card 
       sx={{ 
+        maxWidth:300,
         height:500,
         color: "#FFFFFF",
         backgroundColor: 'rgba(20,20,20)',
@@ -59,8 +65,11 @@ function CardPortfolio({ key, title, tech, image, date, page }) {
                           fontWeight:"bold"
         }}>
           Resumen y Caracteristicas
+          
         </Typography>
-      
+        {/* <div>{detail}</div> */}
+        <Markdown remarkPlugins={[remarkGfm]} className={Style.markdownFeatures}>{markdownFeatures}</Markdown>
+        <Markdown remarkPlugins={[remarkGfm]} className={Style.markdownDetail}>{markdownDetail}</Markdown>
       </CardContent>
     </Card>
       </div>

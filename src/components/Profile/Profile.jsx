@@ -57,37 +57,37 @@ const hardSkills = [
 
 const softSkills = [
   {
-    name: "Fellowship",
+    name: "Compañerismo",
     skill: 90,
     icon: <FaUserFriends />,
   },
   {
-    name: "Resilience",
+    name: "Resiliencia",
     skill: 85,
     icon: <GiMovementSensor />,
   },
   {
-    name: "Learning",
+    name: "Aprendizaje",
     skill: 90,
     icon: <ImBook />,
   },
   {
-    name: "Attitude",
+    name: "Actitud",
     skill: 85,
     icon: <MdOutlineAddReaction />,
   },
   {
-    name: "Willigness",
+    name: "Voluntad",
     skill: 80,
     icon: <ImFire />,
   },
   {
-    name: "Leadership",
+    name: "Liderazgo",
     skill: 85,
     icon: <AiOutlineThunderbolt />,
   },
   {
-    name: "Self Taught",
+    name: "Autodidacta",
     skill: 75,
     icon: <FaUserNinja />,
   },
@@ -96,7 +96,7 @@ const softSkills = [
 function Profile() {
   return (
     <div className={Style.mainContainer} id="about">
-      <Title title={"About Me"}/>
+      <Title title={"Sobre mí"}/>
       <div className={Style.profileContainer}>
         <div className={Style.imageContainer}>
           <img
@@ -119,7 +119,7 @@ function Profile() {
           </p>
         </div>
       </div>
-      <Title title={"My Skills"}/>
+      <Title title={"Mis Habilidades"}/>
       <div className={Style.skillsContainer}>
         
         <div className={Style.skills}>

@@ -26,7 +26,7 @@ function Testimonials() {
         <div className={style.mainContainer} id="testimonials">
             <div className="mainContainerOpacity">
                 <div className={style.secondContainer}>
-                    <Title title={"Testimonials"} />
+                    <Title title={"Testimonios"} />
                     <div className={style.testimonialsContainer}>
                         {
                             testimonios && testimonios.map(e => <TestimonialsCard id={e.id} name={e.name} avatar={e.avatar} quote={e.quote} />)
